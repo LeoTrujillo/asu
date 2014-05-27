@@ -1,0 +1,112 @@
+@import "normalize.styl"
+
+azul_turqueza = #5ec1b9
+azul_verda = #00c8b0
+azul_fondo = #a0e0db2d
+
+a
+	text-decoration none
+body
+	font-size 16px
+figure
+	margin 0
+header
+	height 120px
+h1
+	font-size 1.8em
+	margin 0
+	padding 15px 25px
+.logo
+	margin 10px 30px
+	padding 5px 25px
+.center-block
+	margin 0 auto
+
+.center-text
+	text-align center
+
+.menu
+
+	ul
+		list-style none
+		display block
+		padding 0
+		width 100%
+		li
+			float left
+			width 50%
+
+			a
+				background azul_turqueza
+				color black
+				display block
+				font-size 1.4em
+				padding 15px
+				&:active
+					background azul_verda
+
+.left
+	float left
+.right
+	float right
+.relative
+	position relative
+.absolute
+	position absolute
+
+.container
+	p
+		padding 20px 10px
+
+.contacto
+	display none
+.logo2
+	display none
+
+@media screen and (min-width:642px)
+	body
+		background azul_fondo
+
+	header
+		background white
+		height 260px
+		text-align left
+		width 1024px
+
+	h1
+		font-size 2.8em
+		padding 30px 30px
+
+	.container
+		background white
+
+	.contacto
+		display block
+
+	.logo
+		display none
+
+	.logo2
+		display block
+		margin 35px 30px
+
+	.maxwidth
+		max-width 1024px
+		width 100%
+	.servicios
+		text-align left
+		p
+			margin-left 50px
+	.menu
+		width 50%
+		float right
+		font-size 1.4em
+
+		ul
+			li
+				a
+					background white
+					&:hover
+
+					&:active
+						background white
