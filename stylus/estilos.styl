@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-ihv6w');
+	src:url('../fonts/icomoon.eot?#iefix-ihv6w') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ihv6w') format('woff'),
+		url('../fonts/icomoon.ttf?-ihv6w') format('truetype'),
+		url('../fonts/icomoon.svg?-ihv6w#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 azul_turqueza = #5ec1b9
 azul_verda = #AAAAAA
 gris_fondo = #F5F5F5
@@ -18,7 +30,20 @@ h1
 .logo
 	img
 		margin-top 40%
+h2
+	font-family 'Poiret One'
+	font-size 1em
+	font-weight bold
 
+.telefono
+	&:before
+		content "\e600"
+		font-family "icomoon"
+
+.correo
+	&:before
+		content "\e601"
+		font-family "icomoon"
 .curr
 	background gris_fondo
 	padding 20px 0px
@@ -44,8 +69,11 @@ h1
 	border-bottom 1px solid gray
 .info
 	padding 20px 0px
+
 .subm
 	width 100%
+.cp
+	font-size 0.8em
 
 .menu
 	ul
@@ -81,6 +109,8 @@ h1
 		border-bottom 10px solid gray
 		//max-width 1126px
 		margin 0 auto
+	h2
+		font-size 1.6em
 	.logo
 		img
 			margin-top 0
@@ -100,14 +130,18 @@ h1
 
 	.serv
 		margin 30px 0px
-		font-size 1em
 		margin 0 auto
-
+		ul
+			li
+				font-size 1.3em
+				line-height 2em
 	.form-c
 		border-bottom 0px solid
 
 	.info
-		font-size 1.6em
+		p
+			margin-top 10%
+			font-size 1.2em
 
 	.subm
 		float right
