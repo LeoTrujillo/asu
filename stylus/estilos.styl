@@ -7,6 +7,7 @@ a
 body
 	font-family 'Comfortaa'
 	font-size 18px
+
 figure
 	margin 0 0
 header
@@ -14,23 +15,38 @@ header
 	background gris_fondo
 h1
 	font-family 'Poiret One'
+.logo
+	img
+		margin-top 40%
 
 .curr
 	background gris_fondo
 	padding 20px 0px
+	margin 0 auto
+	width 100%
 
 .center-text
 	text-align center
 .serv
-	padding 20px 0px
+	padding 20px 5px
+	ul
+		li
+			font-size 1.2em
+			line-height 1.6em
+
 .cont
 	background azul_turqueza
+	margin 0 auto
 	padding 20px 0px
+	width 100%
 
 .form-c
 	border-bottom 1px solid gray
 .info
 	padding 20px 0px
+.subm
+	width 100%
+
 .menu
 	ul
 		margin 0
@@ -54,14 +70,20 @@ h1
 					background azul_verda
 					padding-top 15px
 					padding-bottom 13px
+@media screen and (min-width 420px)
+	.logo
+		img
+			margin-top 10%
 
 @media screen and (min-width:642px)
 
 	header
 		border-bottom 10px solid gray
-		max-width 1126px
+		//max-width 1126px
 		margin 0 auto
-
+	.logo
+		img
+			margin-top 0
 	.menu
 		ul
 			float right
@@ -86,3 +108,8 @@ h1
 
 	.info
 		font-size 1.6em
+
+	.subm
+		float right
+		width 30%
+
