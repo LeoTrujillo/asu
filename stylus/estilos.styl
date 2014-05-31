@@ -1,45 +1,46 @@
-@import "normalize.styl"
-
 azul_turqueza = #5ec1b9
-azul_verda = #00c8b0
-azul_fondo = #EEEEEE
-
-//article,aside,details,figcaption,figure,footer,header,nav,section
-//	display block
+azul_verda = #AAAAAA
+gris_fondo = #F5F5F5
 
 a
 	text-decoration none
 body
-	font-size 16px
+	font-family 'Comfortaa'
+	font-size 18px
 figure
 	margin 0 0
 header
-	height 80px
+	padding-top 1.5em
+	background gris_fondo
 h1
-	font-size 1.8em
-	margin 0
-	padding 30px 25px
-.logo
-	padding 30px 25px
-	img
-		width auto
-		max-height 40%
-.center-block
-	margin 0 auto
+	font-family 'Poiret One'
+
+.curr
+	background gris_fondo
+	padding 20px 0px
 
 .center-text
 	text-align center
+.serv
+	padding 20px 0px
+.cont
+	background azul_turqueza
+	padding 20px 0px
 
+.form-c
+	border-bottom 1px solid gray
+.info
+	padding 20px 0px
 .menu
-
 	ul
 		margin 0
-		list-style none
 		display block
 		padding 0
 		width 100%
 		li
-			float left
+
+			list-style none
+			padding 0
 			width 50%
 
 			a
@@ -47,75 +48,41 @@ h1
 				color black
 				display block
 				font-size 1.4em
-				padding 14px
+				font-family 'Poiret One'
+				padding 14px 0px
 				&:active
 					background azul_verda
 					padding-top 15px
 					padding-bottom 13px
 
-.left
-	float left
-.right
-	float right
-.relative
-	position relative
-.absolute
-	position absolute
-
-.container
-	p
-		padding 20px 10px
-
-.contacto
-	display none
-
-
 @media screen and (min-width:642px)
-	body
-		background azul_fondo
 
 	header
-		background white
-		height 240px
-		text-align left
-		width 1024px
-
-	h1
-		font-size 2.6em
-		padding 50px 50px
-	.logo
-		img
-			padding 30px 40px
-			width auto
-			height 60%
-
-	.container
-		background white
-
-	.contacto
-		display block
-
-	.maxwidth
-		max-width 1024px
-		width 100%
-	.servicios
-		text-align left
-		p
-			margin-left 50px
-
-
+		border-bottom 10px solid gray
+		max-width 1126px
+		margin 0 auto
 
 	.menu
-		width 60%
-		float right
-		font-size 1em
-		margin-top 2em
-
 		ul
+			float right
+			width 50%
 			li
 				a
-					background white
-					&:hover
+					background gris_fondo
 
 					&:active
-						background white
+						background gris_fondo
+
+	p
+		padding 0px 50px
+
+	.serv
+		margin 30px 0px
+		font-size 1em
+		margin 0 auto
+
+	.form-c
+		border-bottom 0px solid
+
+	.info
+		font-size 1.6em

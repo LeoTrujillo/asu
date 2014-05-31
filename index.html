@@ -4,53 +4,116 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="img/ico.png">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="foundation/css/foundation.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+    <script src="foundation/js/vendor/modernizr.js"></script>
 	<title>C.P. Asunción Ramon Salvador</title>
-	<!--[if lt IE 9] -->
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<!-- [endif]-->
 </head>
 <body>
 
-	<header class="maxwidth center-block">
-	<figure class="left logo">
-		<img src="img/logo.png" alt="Contadora Asunsión" width="240" height="120">
+	<header>
+	<div class="row">
+		<figure class="small-5 large-4 columns">
+		<img src="img/logo.png" alt="Contadora Asunsión" width="280" height="140">
 	</figure>
 
 		<h1>
 			C.P. Asunción Ramón Salvador
 		</h1>
-		<nav class="menu">
-			<ul class="right">
-				<li class="center-text">
-					<a href="#">Curriculum</a>
+
+	</div>
+	<br/>
+		<nav class="row menu">
+			<ul class="right center-text">
+				<li class="small-6 large-3 columns">
+					<a href="#cu">Curriculum</a>
 				</li>
-				<li class="center-text">
-					<a href="#">Contactame</a>
+				<li class="small-6 large-3 columns">
+					<a href="#cont">Contactame</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<section class="container maxwidth center-block">
-		<article class="servicios">
+	<section class="serv">
+		<article class="row">
 		<p>
-			SERVICIOS CONTABLES, ADMINISTRATIVOS Y FINANCIEROS<br>
-			Trámites ante el SAT, IMSS e INFONAVIT<br>
-			Impuestos Federales y Estatales<br>
-			Declaraciones Mensuales y Anuales<br>
-			SUA, IDSE<br>
+			SERVICIOS CONTABLES, ADMINISTRATIVOS Y FINANCIEROS<br/>
+			Trámites ante el SAT, el IMSS e INFONAVIT<br/>
+			Impuestos Federales y EstatalesDeclaraciones Mensuales y AnualesSUA, IDSE<br/>
 			Asesoría a Personas Físicas y Personas Morales
 		</p>
 		</article>
-	<article class="contacto">
+	</section>
+	<section id="cu" class="row">
+		<article class="curr">
+		<h2 class="center-text">Curriculum</h2>
+		<br/>
+		<p>
+			Estudios actuales en Maestría en Impuestos por el Instituto de Especialización para Ejecutivos, S.C. en la ciudad de Xalapa, Veracruz.
+		</p>
+		<p>
+			Licenciatura en Contaduría por la UMSNH<br/>
+			Facultad de Contaduría y Ciencias Administrativas.
+		</p>
+		<p>
+			Especialidad en impuestos por la UMSNH<br/>
+			Facultad de Contaduría y Ciencias Administrativas.
+		</p>
+		<p>
+			Afiliación al Colegio de Contadores Públicos de Xalapa, A.C.
+		</p>
+
+		<h3 class="center-text">Cursos</h3>
+		<p>
+			Asociación de Masters en Fiscal, A.C.<br/>
+			“Normas de Información Financiera 2012”<br/>
+			Fechas: 22 y 23 de Noviembre 2012.
+		</p>
+		<p>
+			Asociación de Masters en Fiscal, A.C.<br/>
+			“Congreso Nacional de Productividad Fiscal”<br/>
+			Fechas: 22 y 23 de Mayo 2013.
+		</p>
+		<p>
+			Asociación de Masters en Fiscal, A.C.<br/>
+			“Reforma Hacendaria en materia Fiscal y Seguridad Social 2014”<br/>
+			Fechas: Diciembre y enero 2014.
+			</p>
+
+		</p>
 
 	</article>
-	<article class="info">
-
+	</section>
+	<section id="cont" class="row cont">
+	<article class="small-12 large-6 columns form-c">
+		<h3>Contactame:</h3>
+		<form action="">
+			<input type="text" placeholder="Correo electrónico"><br>
+			<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+		</form>
 	</article>
+	<article class="small-12 large-6 columns info center-text">
+		<p>
+			Manuel Hernández #27-B<br/>
+			Col. Francisco Ferrer Guardia<br/>
+			Xalapa, Veracruz.<br/>
+
+			|::|: 22-81-90-33-00<br/>
+
+			@: asuncionrs@hotmail.com<br/>
+		</p>
+
+			</article>
 	</section>
 	<footer>
 
 	</footer>
+	<script src="foundation/js/vendor/jquery.js"></script>
+    <script src="foundation/js/fouh3dation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
