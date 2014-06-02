@@ -1,5 +1,12 @@
 @import "normalize.styl"
 
+animacion(parametro)
+	-webkit-animation parametro
+	-moz-animation parametro
+	-o-animation parametro
+	-ms-animation parametro
+	animation parametro
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot?-ihv6w');
@@ -13,27 +20,28 @@
 
 
 azul_turqueza = #5ec1b9
-azul_verda = #AAAAAA
 gris_fondo = #F5F5F5
+boton = #1e7d76
 
 a
 	text-decoration none
 body
-	font-family 'Comfortaa'
+	font-family 'Varela'
 	font-size 18px
 
 figure
 	margin 0 0
 header
+	border-bottom 15px solid gray
 	padding-top 1.5em
 	background gris_fondo
 h1
-	font-family 'Poiret One'
+	font-family 'Varela'
 .logo
 	img
 		margin-top 40%
 h2
-	font-family 'Poiret One'
+	font-family 'Varela'
 	font-size 1em
 	font-weight bold
 
@@ -78,6 +86,9 @@ h2
 	font-size 0.8em
 
 .menu
+	position fixed
+	bottom 0
+	z-index 123
 	ul
 		margin 0
 		display block
@@ -87,19 +98,35 @@ h2
 
 			list-style none
 			padding 0
-			width 50%
+			width 33.33%
+			&:nth-child(even)
+				border-left 1px solid white
+				border-right 1px solid white
 
 			a
-				background azul_turqueza
-				color black
+				background boton
+				color white
 				display block
-				font-size 1.4em
-				font-family 'Poiret One'
-				padding 14px 0px
+				font-size 1em
+				font-family 'Maven Pro'
+				padding 18px 0px 18px 0px
 				&:active
-					background azul_verda
-					padding-top 15px
-					padding-bottom 13px
+					padding-top 19px
+					padding-bottom 17px
+
+//yo agregue esto XD
+.mov_serv
+	display inline-block
+
+
+@keyframes linea
+	0%
+		border-bottom 1px transparent
+
+	100%
+		border-bottom 5px solid azul_turqueza
+
+
 @media screen and (min-width 420px)
 	.logo
 		img
@@ -117,15 +144,24 @@ h2
 		img
 			margin-top 0
 	.menu
+		position relative
 		ul
 			float right
 			width 50%
 			li
+				width 50%
 				a
-					background gris_fondo
-
+					font-size 1.4em
+					background transparent
+					border-bottom 5px solid transparent
+					color #222222
 					&:active
 						background gris_fondo
+					&:hover
+						-webkit-animation 0.2s linea
+						border-bottom 5px solid azul_turqueza
+	.mov_serv
+		display none
 
 	p
 		padding 0px 50px
@@ -148,4 +184,3 @@ h2
 	.subm
 		float right
 		width 30%
-

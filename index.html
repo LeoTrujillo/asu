@@ -16,9 +16,28 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/ico.png">
 	<link rel="stylesheet" href="foundation/css/foundation.css" />
 	<link rel="stylesheet" href="css/estilos.css" />
-	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro|Varela' rel='stylesheet' type='text/css'>
+	<!--link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'-->
+	<!--link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'-->
     <script src="foundation/js/vendor/modernizr.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+	}, 630);
+        return false;
+      }
+    }
+  });
+});
+	</script>
 	<title>Contador Público Asunción Ramon Salvador</title>
 </head>
 <body>
@@ -29,13 +48,14 @@
             <p class="browsehappy">Estas usando un Navegador <strong>Obsoleto</strong>. Por favor <a href="http://browsehappy.com/">actualiza tu navegador <strong>aquí</strong></a> para una mejor visualización. Gracias :D</p>
         <![endif]-->
 	<header>
+
 	<div class="row">
 		<div class="small-5 large-4 columns">
 		<figure class="logo">
 			<img src="img/logo.png" alt="Contadora Asunsión" width="280" height="140">
 		</figure>
 		</div>
-		<div class="small-7 large-8 columns">
+		<div id="serv" class="small-7 large-8 columns">
 		<h1>
 			Contador Público
 		</h1>
@@ -47,16 +67,19 @@
 
 	</div>
 	<br/>
-		<nav class="row menu">
-			<ul class="right center-text">
-				<li class="small-6 large-3 columns">
-					<a href="#cu">Curriculum</a>
-				</li>
-				<li class="small-6 large-3 columns">
-					<a href="#cont">Contactame</a>
-				</li>
-			</ul>
-		</nav>
+<nav class="row menu">
+	<ul class="right center-text">
+		<li class="small-4 mov_serv columns">
+			<a href="#serv">Servicios</a>
+		</li>
+		<li class="small-4 large-3 columns">
+			<a href="#cu">Curriculum</a>
+		</li>
+		<li class="small-4 large-3 columns">
+			<a href="#cont">Contactame</a>
+		</li>
+	</ul>
+</nav>
 	</header>
 	<section class="serv">
 		<article class="row">
@@ -141,10 +164,6 @@
 	<footer>
 
 	</footer>
-	<script src="foundation/js/vendor/jquery.js"></script>
-    <script src="foundation/js/fouh3dation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+
 </body>
 </html>
